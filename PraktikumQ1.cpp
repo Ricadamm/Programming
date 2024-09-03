@@ -15,7 +15,7 @@ int main()
     cout << "Gross Salary: " << "Rp";
     cin >> Gross ;
 
-    int Tax = (0.2)*Gross;
+    float Tax = (0.2)*Gross;
     cout << fixed << "Tax (20%):  " << "Rp" << Tax << endl;
 
     float Installment;
@@ -26,7 +26,7 @@ int main()
     cout << "Insurance: " << "Rp";
     cin >> Insurance ;
 
-    int Net = Gross - Tax - Installment - Insurance;
+    float Net = Gross - Tax - Installment - Insurance;
     cout << fixed << "Net Salary: " << "Rp " << Net;
 
 }
