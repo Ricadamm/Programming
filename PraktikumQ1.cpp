@@ -7,7 +7,7 @@ int main()
     cout<<"....................."<<endl;
 
 
-     string Name;
+    string Name;
     cout<<"Name: ";
     cin>>Name ;
 
