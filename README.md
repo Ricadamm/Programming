@@ -1,5 +1,4 @@
-# C-
-New
+
 echo "# Coding" >> README.md
 git init
 git add README.md
