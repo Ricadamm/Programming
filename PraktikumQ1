@@ -1,46 +1,32 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
-int main() 
+int main()
 {
-    int a;
-    int b;
-    int c;
+    cout<<"Payslip for Employee:"<<endl;
+    cout<<"....................."<<endl;
 
 
-    cout<<"Value of a: ";
-    cin>>a;
-    cout<<"Value of b: ";
-    cin>>b;
-    cout<<"Value of c: ";
-    cin>>c;
+     string Name;
+    cout<<"Name: ";
+    cin>>Name ;
 
-   float D = b*b-(4*a*c);
-    cout<<"D: b*b-(4ac) = "<<D<<endl;
+    int Gross;
+    cout<<"Gross Salary: " << "Rp";
+    cin>>Gross ;
 
-    if (D>0) {
-       float x1 = -1*b + sqrt(D)/2*a;
-       float x2 = -1*b - sqrt(D)/2*a;
-       cout<<"D>0,"<<endl;
-       cout<<"Result: x1 = "<< x1 <<endl;
-       cout<<"Result: x2 = "<<x2<<endl;
-        
-    }
-    
+    int Tax = (0.2)*Gross;
+    cout<<fixed<<"Tax (20%):  "<<"Rp"<<Tax<<endl;
 
-    if  (D==0) {
-       float x = (-b)/2*a;
-       cout<<"D=0,"<<endl;
-       cout<<"Result: x = "<<x<<endl;
-        
-    }
-    
+    int Installment;
+    cout<<"Installment: "<<"Rp";
+    cin>>Installment;
 
-   if (D<0) {
-        cout<< "D<0, "<< endl;
-        cout << "Result: There are no real roots" << endl;
-       
-   }
-    return 0;
+    int Insurance;
+    cout<<"Insurance: "<<"Rp";
+    cin>>Insurance ;
+
+    int Net = Gross - Tax - Installment - Insurance;
+    cout<< fixed<< "Net Salary: "<<"Rp "<< Net;
+
 }
