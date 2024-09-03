@@ -42,5 +42,5 @@ int main()
         cout << "Result: There are no real roots" << endl;
        
    }
-    return 0;
+   
 }
